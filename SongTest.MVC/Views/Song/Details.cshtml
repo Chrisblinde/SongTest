@@ -1,0 +1,51 @@
+﻿@model SongTest.MVC.Models.Song
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Song</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Band.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Band.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+       
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimesSeen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimesSeen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SongId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
